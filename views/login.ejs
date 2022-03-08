@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/load.css" type="text/css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <script data-main="scripts/main.js" src="scripts/require.js"></script>
+
+  <body
+    class="background"
+    onload="myFunction()"
+    style="background-image: url('images/img1.jpg')"
+  >
+    <div id="loader"></div>
+
+    <div style="display: none" id="myDiv" class="animate-bottom">
+      <form action="/login" method="POST" style="border: 1px solid #ccc">
+        <h1>Login</h1>
+        <% if(messages.error) { %> <%= messages.error %> <% } %>
+        <div class="img">
+          <img
+            src="images/images.jpg"
+            alt="Avatar"
+            class="size"
+            height="150px"
+            width="100px"
+          />
+        </div>
+        <div class="container">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Password"
+            id="password"
+            name="password"
+            required
+          />
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /><a
+              style="color: rgb(14, 14, 14)"
+              >Remember me</a
+            >
+            <span class="psw"
+              ><a style="color: black">Don't have an account?</a
+              ><a style="color: rgb(231, 232, 233)" href="/register">
+                Sign Up</a
+              ></span
+            >
+          </label>
+        </div
+
+        <div style="background-color: #f1f1f1"></div>
+      </form>
+    </div>
+
+    <a href="shop.html">
+    <img src="images/hom_logo.png" alt="home" width="50" height="50" style="position: absolute;top: 0px; right: 0px;" usemap="#map1">
+    </a>
+
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+      }
+
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

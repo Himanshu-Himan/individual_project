@@ -1,0 +1,32 @@
+[
+  {
+    "LightID": "1",
+    "Area": "A",
+    "sensorData": [
+      {
+        "ts": "1529545935",
+        "temp": 17
+      }
+    ]
+  },
+  {
+    "LightID": "2",
+    "Area": "B",
+    "sensorData": [
+      {
+        "ts": "1529572230",
+        "temp": 15
+      }
+    ]
+  },
+  {
+    "LightID": "3",
+    "Area": "C",
+    "sensorData": [
+      {
+        "ts": "1529572230",
+        "temp": 15
+      }
+    ]
+  }
+]

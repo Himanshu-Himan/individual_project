@@ -1,0 +1,123 @@
+body {
+  background-color: lightblue;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+label {
+  color: rgb(149, 166, 212);
+}
+
+.background {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font: 500 1rem "Quicksand", sans-serif;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+h2 {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(247, 247, 247);
+  font-size: 17px;
+}
+
+form {
+  width: 400px;
+  max-width: 400px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(241, 11, 11, 0.2);
+  border-radius: 5px;
+  background-color: transparent;
+  position: relative;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #889e27;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.img {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.size {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.back {
+  padding: 14px 20px;
+  background-color: #2e914f;
+}
+
+.back,
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text {
+  text-align: right;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheed" href="/web/public/css/style.css" />
+  </head>
+  <body class="container" style="background: url(/images/img4.jpg)">
+    <div style="display: inline-block">
+      <form name="form1" id="form_1">
+        <div>Choose the Are of shop to turn lights on/off</div>
+        <p><input type="radio" name="choice" value="1" />Area A</p>
+        <p><input type="radio" name="choice" value="2" />Area B</p>
+        <p><input type="radio" name="choice" value="3" />Area C</p>
+        <p><input type="radio" name="choice" value="4" />All Off</p>
+        <button
+          type="button"
+          onclick="check()"
+          style="
+            background-color: purple;
+            background-repeat: no-repeat;
+            background-position: -120px -120px, 0 0;
+            background: linear-gradient(
+              45deg,
+              rgb(65, 101, 201),
+              rgb(210, 210, 231)
+            );
+          "
+        >
+          Submit
+        </button>
+      </form>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <label>
+        <img
+          id="_image"
+          src="/images/map.jpg"
+          width="60%"
+          height="60%"
+          style="margin: -150px auto"
+      /></label>
+
+      <div
+        class="body1"
+        style="
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          height: 100px;
+          margin: 200px auto;
+          margin-left: 75px;
+        "
+      >
+        <button
+          onclick="document.getElementById('myImage').src='/images/4.png'"
+        >
+          Change Color to ON
+        </button>
+        <button
+          onclick="document.getElementById('myImage').src='/images/7.png'"
+          style="margin-left: 60px; height: 100px"
+        >
+          Change Color to OFF
+        </button>
+        <div style="width: 100px; height: auto; margin-left: 60px">
+          <img
+            id="myImage"
+            src="/images/7.png"
+            style="width: 100px; height: auto"
+          />
+        </div>
+      </div>
+    </div>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>

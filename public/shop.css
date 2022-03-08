@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(243, 243, 243);
+  background: url(./background.png);
+  background-size: cover 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+button {
+  background-color: #4ba6e2;
+  font-size: larger;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 35%;
+  border-radius: 5px;
+  position: relative;
+  top: 250px;
+  left: 14.5%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  margin-left: 90%;
+}
+
+img.size {
+  width: 20%;
+  height: 20%;
+  border-radius: 10%;
+}

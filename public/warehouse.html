@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Warehouse</title>
+    <link rel="stylesheet" href="/css/warehouse.css" />
+  </head>
+  <body
+    class="container"
+    style="
+      background: url(/images/img3.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    "
+  >
+    <div class="main">
+      <div class="header">
+        <h1 style="text-align: center">Temperature</h1>
+        <p style="text-align: center; font-size: 20px">Select Outlet City</p>
+      </div>
+
+      <div class="input">
+        <input type="text" placeholder="Enter the city" class="input_text" />
+        <input
+          type="submit"
+          value="Submit"
+          class="submit"
+          style="width: 150px; height: 45px; padding: 0px"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h1 class="name" id="name"></h1>
+        <p class="temp"></p>
+      </div>
+
+      <h1 style="margin-left: 300px">Optimize Temperature</h1>
+      <input type="number" id="temp" style="margin-left: 180px" />
+      <button onclick="myFunction()">Enter</button>
+    </div>
+
+    <button
+      style="
+        margin-left: 0px;
+        background-color: purple;
+        background-repeat: no-repeat;
+        background-position: -120px -120px, 0 0;
+        background: linear-gradient(
+          45deg,
+          rgb(65, 101, 201),
+          rgb(210, 210, 231)
+        );
+      "
+    >
+      <a class="button" href="/index" style="text-decoration: none">GO back</a>
+    </button>
+    <script src="app1.js"></script>
+  </body>
+</html>
